@@ -20,6 +20,12 @@ public class Week1 {
 
     public static int binarySearch(int[] a, int left, int right, int x){
         if(right >= 1){
+            if(x == a[left]){
+                return left;
+            }
+            if(x == a[right]){
+                return right;
+            }
             int mid = left + (right-1) /2;
             if(a[mid] == x){
                 return mid;
