@@ -56,11 +56,12 @@ public class Point {
         return Math.sqrt(Math.pow(B.getX() - A.getX(), 2) + Math.pow(B.getY() - A.getY(), 2));
     }
 
-    public static double chuVi() {
-        return 1;
+    public static double chuVi(Point A, Point B, Point C) {
+        return Point.KhoangCach(A, B) + Point.KhoangCach(A, C) + Point.KhoangCach(C, B);
     }
 
-    public static double dienTich() {
-        return 1;
+    public static double dienTich(Point A, Point B, Point C) {
+        double p = chuVi(A, B, C) / 2;
+        return Math.sqrt(p * (p - Point.KhoangCach(A, B)) * (p - Point.KhoangCach(A, C)) * (p - Point.KhoangCach(C, B)) );
     }
 }
