@@ -58,11 +58,9 @@ public class Main {
 
         Point.phuongTrinhDT(A, B);
 
-//        System.out.println("- Khoang cach giua hai diem A va B: " + Point.KhoangCach(A, B));
-//        System.out.println("- Khoang cach giua hai diem A va C: " + Point.KhoangCach(A, C));
-//        System.out.println("- Khoang cach giua hai diem B va C: " + Point.KhoangCach(B, C));
-//        System.out.println("- Chu vi tam giac ABC: " + Point.chuVi(A, B, C));
-//        System.out.println("- Dien tich tam giac: " + Point.dienTich(A, B, C));
+        System.out.println("- Chu vi tam giac ABC: " + Point.chuVi(A, B, C));
+
+        System.out.println("- Dien tich tam giac: " + Point.dienTich(A, B, C));
     }
 
     public static void B3() {
